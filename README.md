@@ -1,6 +1,7 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/markom01/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2400f547-4621-4576-94b0-fde3b79a413d/deploy-status)](https://app.netlify.com/sites/marko-meseldzija/deploys)
 
 <!-- PROJECT LOGO -->
 <br />
