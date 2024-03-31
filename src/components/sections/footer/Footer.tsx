@@ -19,13 +19,7 @@ const socialIcons = [
     link: function () {
       return generateLink(this.name, "in/markom01");
     },
-  },
-  {
-    name: "twitter",
-    link: function () {
-      return generateLink(this.name, "marko_m_01");
-    },
-  },
+  }
 ];
 
 const capitalize = (word: string) =>
@@ -54,7 +48,7 @@ export default function Footer() {
               </a>
             </div>
           ))}
-          <div className="col-12">
+          {/* <div className="col-12">
             <a
               className={`button position-relative d-inline-block px-3 py-2 text-decoration-none text-uppercase
          ${styles.secondary}`}
@@ -64,7 +58,7 @@ export default function Footer() {
               <Icon src="icons/cv.svg" size="small" alt="cv" className="me-2" />
               CV
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </Section>

@@ -22,7 +22,9 @@ export default function Hero() {
           <p>Marko Meseldžija</p>
         </div>
         <div className="col">
-          <h1>Frontend | UI UX</h1>
+          <h1>
+            iOS <span className="text-uppercase">Developer</span>
+          </h1>
         </div>
 
         <div className="btns col">

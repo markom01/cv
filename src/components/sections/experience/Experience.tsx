@@ -36,7 +36,7 @@ export default function Experience() {
     <Section className="mx-1 mx-md-3" id="experience">
       <div className={`wrapper-scroll pb-4 gap-5 ${styles.wrapper}`}>
         {data.allMdx.nodes.map((project, i) => (
-          <ExperienceCard project={project} key={project.frontmatter.role} />
+          <ExperienceCard project={project} showConnector={i !== data.allMdx.nodes.length - 1} key={project.frontmatter.role} />
         ))}
       </div>
     </Section>
@@ -51,7 +51,7 @@ function Connector() {
   );
 }
 
-function ExperienceCard({ project }: { project: ExperienceProps }) {
+function ExperienceCard({ project, showConnector }: { project: ExperienceProps, showConnector: boolean }) {
   const startDate = new Date(project.frontmatter.startDate);
   const endDate = new Date(project.frontmatter.endDate);
   const [endDateFormatted, setEndDateFormatted] = useState(
@@ -110,7 +110,7 @@ function ExperienceCard({ project }: { project: ExperienceProps }) {
           </div>
         </div>
       </article>
-      {project.frontmatter.role !== "Mobile Developer" && <Connector />}
+      {showConnector && <Connector />}
     </div>
   );
 }

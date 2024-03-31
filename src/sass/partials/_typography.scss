@@ -11,7 +11,7 @@ h2 {
 }
 
 h1 {
-  @extend .text-primary, .text-uppercase, .mx-auto, .fw-bold;
+  @extend .text-primary, .mx-auto, .fw-bold;
 
   width: 70vmin;
 }
