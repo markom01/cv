@@ -1,4 +1,7 @@
-const config = {
+import type { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
+  graphqlTypegen: true,
   siteMetadata: {
     title: "Portfolio",
     description: "Front End Web Development & UI/UX Design",
@@ -56,3 +59,5 @@ const config = {
     "gatsby-plugin-mdx",
   ],
 };
+
+export default config;

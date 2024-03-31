@@ -1,5 +1,5 @@
 const path = require("path");
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ actions }: { actions: any }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
